@@ -11,7 +11,9 @@ To get started and run the app following, you need to follow these simple steps:
 1. Open the project with Xcode.
 2. Sign up for Fabric on [fabric.io](https://fabric.io).
 3. Download and install the Fabric Mac app.
-4. Install Twitter Kit from the Mac app. You can select either of the predefined snipped (eg. "Log In With Twitter"), but you don't copy any of the code.
+4. Install Twitter Kit from the Mac app. 
+4.1 Create a new Run Script Phase.
+4.2	Select one of the predefined snippets to complete the onboarding (eg. "Log In With Twitter"). Note: You don't have to copy any of the code provided into your project. 
 5. You're all set! Run the project on your iPhone or the iOS Simulator.
 
 ## Compatibility
