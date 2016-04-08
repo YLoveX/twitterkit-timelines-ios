@@ -16,10 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     TWTRAPIClient *client = [[TWTRAPIClient alloc] init];
     self.dataSource = [[TWTRUserTimelineDataSource alloc] initWithScreenName:@"fabric" APIClient:client];
-    [self.tableView reloadData];
 }
 
 @end

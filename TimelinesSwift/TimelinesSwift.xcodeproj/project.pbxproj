@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		044429F11B152D9B00C5EC11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044429F01B152D9B00C5EC11 /* LoginViewController.swift */; };
 		04F54B3E1B151D0A0083F7CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F54B3D1B151D0A0083F7CB /* AppDelegate.swift */; };
 		04F54B401B151D0A0083F7CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F54B3F1B151D0A0083F7CB /* ViewController.swift */; };
 		04F54B431B151D0A0083F7CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F54B411B151D0A0083F7CB /* Main.storyboard */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		044429F01B152D9B00C5EC11 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04F54B381B151D0A0083F7CB /* TimelinesSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelinesSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F54B3C1B151D0A0083F7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F54B3D1B151D0A0083F7CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				04F54B3D1B151D0A0083F7CB /* AppDelegate.swift */,
 				04F54B3F1B151D0A0083F7CB /* ViewController.swift */,
 				04F54B411B151D0A0083F7CB /* Main.storyboard */,
-				044429F01B152D9B00C5EC11 /* LoginViewController.swift */,
 				04F54B441B151D0A0083F7CB /* Images.xcassets */,
 				04F54B461B151D0A0083F7CB /* LaunchScreen.xib */,
 				04F54B3B1B151D0A0083F7CB /* Supporting Files */,
@@ -116,7 +113,9 @@
 		04F54B301B151D0A0083F7CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Fabric;
 				TargetAttributes = {
 					04F54B371B151D0A0083F7CB = {
@@ -161,7 +160,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044429F11B152D9B00C5EC11 /* LoginViewController.swift in Sources */,
 				04F54B401B151D0A0083F7CB /* ViewController.swift in Sources */,
 				04F54B3E1B151D0A0083F7CB /* AppDelegate.swift in Sources */,
 			);
@@ -210,6 +208,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -280,6 +279,7 @@
 				);
 				INFOPLIST_FILE = TimelinesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.fabric.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -294,6 +294,7 @@
 				);
 				INFOPLIST_FILE = TimelinesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.fabric.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
