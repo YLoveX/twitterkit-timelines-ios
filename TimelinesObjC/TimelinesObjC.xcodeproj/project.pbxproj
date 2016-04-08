@@ -17,7 +17,6 @@
 		04442A2A1B15365E00C5EC11 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04442A261B15365E00C5EC11 /* TwitterKit.framework */; };
 		04442A2B1B15365E00C5EC11 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04442A271B15365E00C5EC11 /* TwitterKitResources.bundle */; };
 		04442A2C1B15365E00C5EC11 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04442A281B15365E00C5EC11 /* TwitterCore.framework */; };
-		04442A2F1B1536AD00C5EC11 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04442A2E1B1536AD00C5EC11 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +34,6 @@
 		04442A261B15365E00C5EC11 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		04442A271B15365E00C5EC11 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		04442A281B15365E00C5EC11 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
-		04442A2D1B1536AD00C5EC11 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		04442A2E1B1536AD00C5EC11 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +81,6 @@
 				04442A0B1B15361900C5EC11 /* Images.xcassets */,
 				04442A0D1B15361900C5EC11 /* LaunchScreen.xib */,
 				044429FE1B15361900C5EC11 /* Supporting Files */,
-				04442A2D1B1536AD00C5EC11 /* LoginViewController.h */,
-				04442A2E1B1536AD00C5EC11 /* LoginViewController.m */,
 			);
 			path = TimelinesObjC;
 			sourceTree = "<group>";
@@ -109,6 +104,7 @@
 				044429F71B15361900C5EC11 /* Sources */,
 				044429F81B15361900C5EC11 /* Frameworks */,
 				044429F91B15361900C5EC11 /* Resources */,
+				24B7197A1CB7FAD70049B762 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -125,7 +121,7 @@
 		044429F31B15361900C5EC11 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Fabric;
 				TargetAttributes = {
 					044429FA1B15361900C5EC11 = {
@@ -165,12 +161,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24B7197A1CB7FAD70049B762 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run cc2e12977041edcebb74f76c064c427b6a099bf7 8fca5ee57192d7dd9b619f3687b8dc4e59102cf4b24edf94c6eb886bd1b4b4a2";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		044429F71B15361900C5EC11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04442A2F1B1536AD00C5EC11 /* LoginViewController.m in Sources */,
 				04442A071B15361900C5EC11 /* ViewController.m in Sources */,
 				04442A041B15361900C5EC11 /* AppDelegate.m in Sources */,
 				04442A011B15361900C5EC11 /* main.m in Sources */,
@@ -220,6 +231,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -289,6 +301,7 @@
 				);
 				INFOPLIST_FILE = TimelinesObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.fabric.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -303,6 +316,7 @@
 				);
 				INFOPLIST_FILE = TimelinesObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.fabric.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
