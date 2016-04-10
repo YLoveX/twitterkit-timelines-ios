@@ -11,9 +11,13 @@ import TwitterKit
 
 class ViewController: TWTRTimelineViewController {
     
-    override func awakeFromNib() {
-        let client = Twitter.sharedInstance().APIClient
-        self.dataSource = TWTRUserTimelineDataSource(screenName: "fabric", APIClient: client)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.dataSource = TWTRUserTimelineDataSource(screenName: "fabric", APIClient: TWTRAPIClient())
     }
+
+    
+
     
 }

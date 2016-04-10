@@ -17,7 +17,12 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Fabric with:@[TwitterKit]];
+    
+    NSString *welcome = @"Welcome to TimelinesObjC! Please onboard with the Fabric Mac app. Check the instructions in the README file.";
+  
+    NSAssert([[NSBundle mainBundle] objectForInfoDictionaryKey:@"Fabric"] != nil, welcome);
+    
+    [Fabric with:@[[Twitter class]]];
 
     return YES;
 }
