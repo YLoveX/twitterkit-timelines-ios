@@ -1,6 +1,6 @@
 # Twitter Kit Timelines samples for iOS
 
-This is a sample demonstrating basic usage of [Timelines] (https://dev.twitter.com/twitter-kit/ios/show-timelines) which are a part of Twitter Kit.
+This is a sample demonstrating basic usage of [Timelines](https://dev.twitter.com/twitter-kit/ios/show-timelines) which are a part of Twitter Kit.
 
 This sample uses guest authentication which is limited to API requests that do not require a user context.
 
