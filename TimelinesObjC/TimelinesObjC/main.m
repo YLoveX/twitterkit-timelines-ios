@@ -3,7 +3,7 @@
 //  TimelinesObjC
 //
 //  Created by Valentin Polouchkine  on 5/26/15.
-//  Copyright (c) 2015 Fabric. All rights reserved.
+//  Copyright (c) 2015 Twitter. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

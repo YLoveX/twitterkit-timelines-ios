@@ -2,12 +2,11 @@
 //  AppDelegate.m
 //  TimelinesObjC
 //
-//  Created by Fabric on 5/26/15.
-//  Copyright (c) 2015 Fabric. All rights reserved.
+//  Created by Twitter on 5/26/15.
+//  Copyright (c) 2015 Twitter. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <Fabric/Fabric.h>
 #import <TwitterKit/TwitterKit.h>
 
 @interface AppDelegate ()
@@ -18,11 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    NSString *welcome = @"Welcome to TimelinesObjC! Please onboard with the Fabric Mac app. Check the instructions in the README file.";
-  
-    NSAssert([[NSBundle mainBundle] objectForInfoDictionaryKey:@"Fabric"] != nil, welcome);
+    NSMutableDictionary *twitterKeys;
     
-    [Fabric with:@[[Twitter class]]];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Twitter" ofType:@"plist"];
+    
+    twitterKeys = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+    
+    [[Twitter sharedInstance] startWithConsumerKey:[twitterKeys objectForKey:@"consumer_key"] consumerSecret:[twitterKeys objectForKey:@"consumer_secret"]];
 
     return YES;
 }

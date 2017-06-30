@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,12 @@
 		04442A0A1B15361900C5EC11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04442A081B15361900C5EC11 /* Main.storyboard */; };
 		04442A0C1B15361900C5EC11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04442A0B1B15361900C5EC11 /* Images.xcassets */; };
 		04442A0F1B15361900C5EC11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04442A0D1B15361900C5EC11 /* LaunchScreen.xib */; };
-		04442A291B15365E00C5EC11 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04442A251B15365E00C5EC11 /* Fabric.framework */; };
-		04442A2A1B15365E00C5EC11 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04442A261B15365E00C5EC11 /* TwitterKit.framework */; };
-		04442A2B1B15365E00C5EC11 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04442A271B15365E00C5EC11 /* TwitterKitResources.bundle */; };
-		04442A2C1B15365E00C5EC11 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04442A281B15365E00C5EC11 /* TwitterCore.framework */; };
+		2443311F1F0699EF006C236B /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443311B1F0699EF006C236B /* TwitterCore.framework */; };
+		244331201F0699EF006C236B /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443311C1F0699EF006C236B /* TwitterKit.framework */; };
+		244331211F0699EF006C236B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2443311D1F0699EF006C236B /* TwitterKitResources.bundle */; };
+		244331221F0699EF006C236B /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2443311E1F0699EF006C236B /* TwitterShareExtensionUIResources.bundle */; };
+		244331251F069A64006C236B /* Twitter.blank.plist in Resources */ = {isa = PBXBuildFile; fileRef = 244331231F069A64006C236B /* Twitter.blank.plist */; };
+		244331261F069A64006C236B /* Twitter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 244331241F069A64006C236B /* Twitter.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +32,12 @@
 		04442A091B15361900C5EC11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04442A0B1B15361900C5EC11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04442A0E1B15361900C5EC11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		04442A251B15365E00C5EC11 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		04442A261B15365E00C5EC11 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		04442A271B15365E00C5EC11 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		04442A281B15365E00C5EC11 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		2443311B1F0699EF006C236B /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		2443311C1F0699EF006C236B /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		2443311D1F0699EF006C236B /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		2443311E1F0699EF006C236B /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
+		244331231F069A64006C236B /* Twitter.blank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Twitter.blank.plist; sourceTree = "<group>"; };
+		244331241F069A64006C236B /* Twitter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Twitter.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,9 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04442A291B15365E00C5EC11 /* Fabric.framework in Frameworks */,
-				04442A2C1B15365E00C5EC11 /* TwitterCore.framework in Frameworks */,
-				04442A2A1B15365E00C5EC11 /* TwitterKit.framework in Frameworks */,
+				2443311F1F0699EF006C236B /* TwitterCore.framework in Frameworks */,
+				244331201F0699EF006C236B /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,10 +56,6 @@
 		044429F21B15361900C5EC11 = {
 			isa = PBXGroup;
 			children = (
-				04442A251B15365E00C5EC11 /* Fabric.framework */,
-				04442A261B15365E00C5EC11 /* TwitterKit.framework */,
-				04442A271B15365E00C5EC11 /* TwitterKitResources.bundle */,
-				04442A281B15365E00C5EC11 /* TwitterCore.framework */,
 				044429FD1B15361900C5EC11 /* TimelinesObjC */,
 				044429FC1B15361900C5EC11 /* Products */,
 			);
@@ -73,6 +72,12 @@
 		044429FD1B15361900C5EC11 /* TimelinesObjC */ = {
 			isa = PBXGroup;
 			children = (
+				244331231F069A64006C236B /* Twitter.blank.plist */,
+				244331241F069A64006C236B /* Twitter.plist */,
+				2443311B1F0699EF006C236B /* TwitterCore.framework */,
+				2443311C1F0699EF006C236B /* TwitterKit.framework */,
+				2443311D1F0699EF006C236B /* TwitterKitResources.bundle */,
+				2443311E1F0699EF006C236B /* TwitterShareExtensionUIResources.bundle */,
 				04442A021B15361900C5EC11 /* AppDelegate.h */,
 				04442A031B15361900C5EC11 /* AppDelegate.m */,
 				04442A051B15361900C5EC11 /* ViewController.h */,
@@ -121,7 +126,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = Fabric;
+				ORGANIZATIONNAME = TwitterDev;
 				TargetAttributes = {
 					044429FA1B15361900C5EC11 = {
 						CreatedOnToolsVersion = 6.3;
@@ -129,7 +134,7 @@
 				};
 			};
 			buildConfigurationList = 044429F61B15361900C5EC11 /* Build configuration list for PBXProject "TimelinesObjC" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -151,10 +156,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04442A2B1B15365E00C5EC11 /* TwitterKitResources.bundle in Resources */,
+				244331211F0699EF006C236B /* TwitterKitResources.bundle in Resources */,
+				244331261F069A64006C236B /* Twitter.plist in Resources */,
 				04442A0A1B15361900C5EC11 /* Main.storyboard in Resources */,
+				244331251F069A64006C236B /* Twitter.blank.plist in Resources */,
 				04442A0F1B15361900C5EC11 /* LaunchScreen.xib in Resources */,
 				04442A0C1B15361900C5EC11 /* Images.xcassets in Resources */,
+				244331221F0699EF006C236B /* TwitterShareExtensionUIResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -281,10 +289,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TimelinesObjC",
 				);
 				INFOPLIST_FILE = TimelinesObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.fabric.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twitterdev.TimelinesObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -296,10 +306,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TimelinesObjC",
 				);
 				INFOPLIST_FILE = TimelinesObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.fabric.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twitterdev.TimelinesObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

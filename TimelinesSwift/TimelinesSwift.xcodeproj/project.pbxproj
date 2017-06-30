@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,10 +12,11 @@
 		04F54B431B151D0A0083F7CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F54B411B151D0A0083F7CB /* Main.storyboard */; };
 		04F54B451B151D0A0083F7CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F54B441B151D0A0083F7CB /* Images.xcassets */; };
 		04F54B481B151D0A0083F7CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F54B461B151D0A0083F7CB /* LaunchScreen.xib */; };
-		04F54B621B151D940083F7CB /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F54B5E1B151D940083F7CB /* Fabric.framework */; };
-		04F54B631B151D940083F7CB /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F54B5F1B151D940083F7CB /* TwitterKit.framework */; };
-		04F54B641B151D940083F7CB /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04F54B601B151D940083F7CB /* TwitterKitResources.bundle */; };
-		04F54B651B151D940083F7CB /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F54B611B151D940083F7CB /* TwitterCore.framework */; };
+		244331121F0697BF006C236B /* Twitter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 244331101F0697BF006C236B /* Twitter.plist */; };
+		244331171F0698D5006C236B /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244331131F0698D5006C236B /* TwitterCore.framework */; };
+		244331181F0698D5006C236B /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244331141F0698D5006C236B /* TwitterKit.framework */; };
+		244331191F0698D5006C236B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 244331151F0698D5006C236B /* TwitterKitResources.bundle */; };
+		2443311A1F0698D5006C236B /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 244331161F0698D5006C236B /* TwitterShareExtensionUIResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,12 @@
 		04F54B421B151D0A0083F7CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04F54B441B151D0A0083F7CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04F54B471B151D0A0083F7CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		04F54B5E1B151D940083F7CB /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		04F54B5F1B151D940083F7CB /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		04F54B601B151D940083F7CB /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		04F54B611B151D940083F7CB /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		2443310F1F0697BF006C236B /* Twitter.blank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Twitter.blank.plist; sourceTree = "<group>"; };
+		244331101F0697BF006C236B /* Twitter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Twitter.plist; sourceTree = "<group>"; };
+		244331131F0698D5006C236B /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		244331141F0698D5006C236B /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		244331151F0698D5006C236B /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		244331161F0698D5006C236B /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F54B621B151D940083F7CB /* Fabric.framework in Frameworks */,
-				04F54B651B151D940083F7CB /* TwitterCore.framework in Frameworks */,
-				04F54B631B151D940083F7CB /* TwitterKit.framework in Frameworks */,
+				244331171F0698D5006C236B /* TwitterCore.framework in Frameworks */,
+				244331181F0698D5006C236B /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,10 +51,10 @@
 		04F54B2F1B151D0A0083F7CB = {
 			isa = PBXGroup;
 			children = (
-				04F54B5E1B151D940083F7CB /* Fabric.framework */,
-				04F54B5F1B151D940083F7CB /* TwitterKit.framework */,
-				04F54B601B151D940083F7CB /* TwitterKitResources.bundle */,
-				04F54B611B151D940083F7CB /* TwitterCore.framework */,
+				244331131F0698D5006C236B /* TwitterCore.framework */,
+				244331141F0698D5006C236B /* TwitterKit.framework */,
+				244331151F0698D5006C236B /* TwitterKitResources.bundle */,
+				244331161F0698D5006C236B /* TwitterShareExtensionUIResources.bundle */,
 				04F54B3A1B151D0A0083F7CB /* TimelinesSwift */,
 				04F54B391B151D0A0083F7CB /* Products */,
 			);
@@ -69,6 +71,8 @@
 		04F54B3A1B151D0A0083F7CB /* TimelinesSwift */ = {
 			isa = PBXGroup;
 			children = (
+				2443310F1F0697BF006C236B /* Twitter.blank.plist */,
+				244331101F0697BF006C236B /* Twitter.plist */,
 				04F54B3D1B151D0A0083F7CB /* AppDelegate.swift */,
 				04F54B3F1B151D0A0083F7CB /* ViewController.swift */,
 				04F54B411B151D0A0083F7CB /* Main.storyboard */,
@@ -115,16 +119,17 @@
 			attributes = {
 				LastSwiftMigration = 0730;
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Fabric;
 				TargetAttributes = {
 					04F54B371B151D0A0083F7CB = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
 			buildConfigurationList = 04F54B331B151D0A0083F7CB /* Build configuration list for PBXProject "TimelinesSwift" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -146,10 +151,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F54B641B151D940083F7CB /* TwitterKitResources.bundle in Resources */,
+				244331121F0697BF006C236B /* Twitter.plist in Resources */,
 				04F54B431B151D0A0083F7CB /* Main.storyboard in Resources */,
 				04F54B481B151D0A0083F7CB /* LaunchScreen.xib in Resources */,
 				04F54B451B151D0A0083F7CB /* Images.xcassets in Resources */,
+				244331191F0698D5006C236B /* TwitterKitResources.bundle in Resources */,
+				2443311A1F0698D5006C236B /* TwitterShareExtensionUIResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +207,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -224,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -245,8 +254,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -262,9 +273,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -276,11 +288,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TimelinesSwift",
 				);
 				INFOPLIST_FILE = TimelinesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.fabric.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twitterdev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -291,11 +305,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TimelinesSwift",
 				);
 				INFOPLIST_FILE = TimelinesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.fabric.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twitterdev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

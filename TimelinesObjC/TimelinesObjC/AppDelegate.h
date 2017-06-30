@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  TimelinesObjC
 //
-//  Created by Fabric on 5/26/15.
-//  Copyright (c) 2015 Fabric. All rights reserved.
+//  Created by Twitter on 5/26/15.
+//  Copyright (c) 2015 Twitter. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

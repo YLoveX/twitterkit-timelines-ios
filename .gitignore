@@ -1,4 +1,9 @@
+*Twitter.plist
+.DS_Store
+#
+# 
 # Xcode
+#
 #
 build/
 *.pbxuser

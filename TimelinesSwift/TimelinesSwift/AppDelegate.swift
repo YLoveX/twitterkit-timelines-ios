@@ -2,12 +2,11 @@
 //  AppDelegate.swift
 //  TimelinesSwift
 //
-//  Created by Fabric  on 5/26/15.
-//  Copyright (c) 2015 Fabric. All rights reserved.
+//  Created by Twitter  on 5/26/15.
+//  Copyright (c) 2015 Twitter. All rights reserved.
 //
 
 import UIKit
-import Fabric
 import TwitterKit
 
 @UIApplicationMain
@@ -15,12 +14,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    var consumer_key: String = ""
+    var consumer_secret: String = ""
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        let welcome = "Welcome to TimelinesSwift! Please onboard with the Fabric Mac app. Check the instructions in the README file."
-        precondition(NSBundle.mainBundle().objectForInfoDictionaryKey("Fabric") != nil, welcome)
-
-        Fabric.with([Twitter.self])
+        // grab app keys from Twitter.plist in app bundle
+        // avoids having to have that file in source control...
+        if let url = Bundle.main.url(forResource:"Twitter", withExtension: "plist") {
+            do {
+                let data = try Data(contentsOf:url)
+                let swiftDictionary = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [String:Any]
+                consumer_key = swiftDictionary["consumer_key"] as! String
+                consumer_secret = swiftDictionary["consumer_secret"] as! String
+            } catch {
+                print(error)
+            }
+        }
+        
+        Twitter.sharedInstance().start(withConsumerKey:consumer_key, consumerSecret:consumer_secret)
         
         return true
     }
